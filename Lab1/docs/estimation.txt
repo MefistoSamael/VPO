@@ -1,0 +1,22 @@
+Lab1
+Documentation - 3h
+T1 code - 20m;	tests - 20m
+T2 code - 1h 20m; tests - 2h
+T3 code - 1h 20m; tests - 2h
+T4 code - 1h 20m; tests - 1h
+T5 code - 2h; tests - 2h 20m
+T6 code - 2h 20m; tests - 2h 20m
+
+18h 40m
+
+13 - 1h
+14 - 2h
+15 - 2h
+16 - 3h 20m
+17 - 4h
+18 - 4h
+19 - 2h 20m 
+
+real:
+13 - 30m
+14 - 2h 02m
