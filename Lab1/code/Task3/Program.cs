@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            SquareCalculator sc = new SquareCalculator();
+            Console.WriteLine(sc.CalculateSquare(Convert.ToDouble(args[0]), Convert.ToDouble(args[1]))); 
         }
     }
 }

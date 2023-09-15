@@ -8,38 +8,28 @@ namespace Task3
 {
     public class SquareCalculator
     {
-        private const string invalidWidthExceptionMessage = "error: invalid width";
-        private const string invalidLengthExceptionMessage = "error: invalid length";
-        private const string overflowExceptionMessage = "Ahhh, senpai, it's too big";
-        private const string underflowExceptionMessage = "senpai, it's too small";
-        public double Task3()
-        {
-            Console.WriteLine("Enter length");
-            var length = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Enter width");
-            var width = Convert.ToDouble(Console.ReadLine());
-
-            return CalculateSquare(length, width);
-        }
 
         public double CalculateSquare(double width, double length)
         {
             // checking for the valid width and length
             if (width < 0)
-                throw new InvalidDataException(invalidWidthExceptionMessage);
+                throw new InvalidDataException(ExceptionMessages.invalidWidth);
 
             if (length < 0)
-                throw new InvalidDataException(invalidLengthExceptionMessage);
+                throw new InvalidDataException(ExceptionMessages.invalidLength);
 
             double answ = width * length;
 
+            if (answ < 1E-17)
+                throw new Exception(ExceptionMessages.preceisionLoss);
+
             // tracking overflow
             if (double.IsInfinity(answ))
-                throw new OverflowException(overflowExceptionMessage);
+                throw new OverflowException(ExceptionMessages.overflow);
 
+            // tracking underflow
             if (double.IsNaN(answ))
-                throw new OverflowException(underflowExceptionMessage);
+                throw new OverflowException(ExceptionMessages.underflow);
 
             return answ;
         }
