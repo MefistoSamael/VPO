@@ -12,11 +12,11 @@ namespace Task3
         public double CalculateSquare(double width, double length)
         {
             // checking for the valid width and length
-            if (width < 0)
-                throw new InvalidDataException(ExceptionMessages.invalidWidth);
+            if (width <= 0)
+                throw new ArgumentException(ExceptionMessages.invalidWidth);
 
-            if (length < 0)
-                throw new InvalidDataException(ExceptionMessages.invalidLength);
+            if (length <= 0)
+                throw new ArgumentException(ExceptionMessages.invalidLength);
 
             double answ = width * length;
 

@@ -18,5 +18,10 @@ T6 code - 2h 20m; tests - 2h 20m
 19 - 2h 20m 
 
 real:
-13 - 30m
-14 - 2h 02m
+13 - 30m - T1, T2, T3 code
+
+14 - 2h 02m - T2 tests
+
+15 - 30m - T3 code; 
+     12m - T3 tests;
+
