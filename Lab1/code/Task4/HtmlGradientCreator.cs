@@ -11,7 +11,7 @@ namespace Task4
     {
         public void CreateHtmlGradient()
         {
-            string filePath = "gradient_table.html";
+            string filePath = MyPath.path;
 
             // Создаем файл и объект StreamWriter для записи в него
             using (StreamWriter sw = new StreamWriter(filePath))
@@ -23,7 +23,7 @@ namespace Task4
                 sw.WriteLine("<title>Градиентная таблица</title>");
                 sw.WriteLine("</head>");
                 sw.WriteLine("<body>");
-                sw.WriteLine("<table border='1'>");
+                sw.WriteLine("<table>");
 
                 int rowCount = 255; // Количество строк в таблице
                 double step = 255.0 / rowCount; // Рассчитываем шаг изменения цвета
@@ -38,7 +38,7 @@ namespace Task4
 
                     // Создаем строку таблицы с заданным фоновым цветом
                     sw.WriteLine("<tr style='background-color:" + bgColor + "'>");
-                    sw.WriteLine("<td>Row " + (i + 1) + "</td>");
+                    sw.WriteLine("<td width=\"1000\"> </td>");
                     sw.WriteLine("</tr>");
                 }
 
