@@ -25,5 +25,12 @@ real:
 15 - 30m - T3 code; 
      12m - T3 tests;
      1h 2m - T4 code(ASPOSE html -rep)
+total 1h 44m
+
 16 - 1h - T4 tests
-     25 - T5 code
+     25m - T5 code
+     34m - T5 tests
+total 1h 59m
+17 - 55m T6 code/tests
+
+

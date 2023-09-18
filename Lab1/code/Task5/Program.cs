@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Task5;
+
+ExtensionChecker extensionChecker = new ExtensionChecker();
+var a = extensionChecker.FindFileWithExtesion($"{Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName}\\cascading_folder", "txt");
+Console.WriteLine(" ");
